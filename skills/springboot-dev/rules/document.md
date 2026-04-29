@@ -7,14 +7,14 @@
 
 Output document naming format:
 ```
-yyyy-MM-dd_HH:mm:ss-[Module]-[Feature]-[DocumentType].md
+yyyy-MM-dd_HHmmss-[Module]-[Feature]-[DocumentType].md
 ```
 
 **Examples**:
 ```
-2026-04-27_14:30:00-user-management-create-user-API.md
-2026-04-27_14:30:00-user-management-create-user-SQL.md
-2026-04-27_14:30:00-user-management-create-user-curl-test.md
+2026-04-27_143000-user-management-create-user-API.md
+2026-04-27_143000-user-management-create-user-SQL.md
+2026-04-27_143000-user-management-create-user-curl-test.md
 ```
 
 ## R-DOC-02 Document directory structure
@@ -24,16 +24,16 @@ Backend documents are uniformly stored in the `backend-docs/` directory with the
 ```
 backend-docs/
 ├── api-docs/                  # New/changed APIs must be kept up to date
-│   └── yyyy-MM-dd_HH:mm:ss-[Module]-[Feature]-API.md
+│   └── yyyy-MM-dd_HHmmss-[Module]-[Feature]-API.md
 ├── api-change-log.md
 ├── sql-docs/
 │   ├── ddl/                  # Latest database table structures
-│   │   └── yyyy-MM-dd_HH:mm:ss-[Module]-[Feature]-DDL.md
+│   │   └── yyyy-MM-dd_HHmmss-[Module]-[Feature]-DDL.md
 │   ├── db-change-log.md
 │   └── dml/                  # Initialization statements to be executed
-│       └── yyyy-MM-dd_HH:mm:ss-[Module]-[Feature]-DML.md
+│       └── yyyy-MM-dd_HHmmss-[Module]-[Feature]-DML.md
 ├── curl-test-docs/
-│   └── yyyy-MM-dd_HH:mm:ss-[Module]-[Feature]-curl-test.md
+│   └── yyyy-MM-dd_HHmmss-[Module]-[Feature]-curl-test.md
 ├── operation-log.md
 └── feature-change-log.md
 ```
